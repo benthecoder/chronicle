@@ -27,7 +27,7 @@ export function LoadingIntro({ onComplete }: { onComplete: () => void }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Today's Stories, Thoughtfully Curated
+          Today&apos;s Stories, Thoughtfully Curated
         </motion.p>
       </div>
     </motion.div>

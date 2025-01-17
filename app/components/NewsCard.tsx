@@ -137,7 +137,7 @@ export function NewsCard({
           {isContextExpanded && (
             <div className="px-3 pb-3">
               <p className="text-[var(--muted)] text-sm leading-relaxed">
-                This article is from {article.source.name}'s top headlines.
+                This article is from {article.source.name}&apos; top headlines.
                 Consider exploring multiple perspectives for a comprehensive
                 understanding.
               </p>
