@@ -3,19 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fffdf7;
+  --foreground: #1a1a1a;
+  --accent: #4f46e5;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --card-border: #e5e7eb;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.stripe-gradient {
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stripe-gradient {
+  background: linear-gradient(45deg, var(--accent), #ff61b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer base {
+  :root {
+    --font-serif: "Georgia", serif;
+  }
+}
+
+.prose {
+  max-width: 65ch;
+  color: #2D3748;
+}
+
+.prose p {
+  margin-bottom: 1.5em;
+  line-height: 1.75;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
